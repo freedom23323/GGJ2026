@@ -1,0 +1,280 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\unity\\My project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\npc\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\unity\\my project\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\player\\playeranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeranimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\map\\consumableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\consumableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\manager\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\map\\lockeddoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\lockeddoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\star\\star.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\star\\star.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\map\\scorewall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\scorewall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\manager\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\map\\secretdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\secretdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\map\\keyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\keyitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\manager\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\npc\\interactablenpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc\\interactablenpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\map\\levelportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\levelportal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\unity\\My project\\assets\\scripts\\npc\\npcanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc\\npcanimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T07:43:53.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Manager\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Manager\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\GameManager.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAEwFgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T09:46:46.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MapManager.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Manager\\MapManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\MapManager.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Manager\\MapManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\MapManager.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAADgvz0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T12:04:18.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScoreWall.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Map\\ScoreWall.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\ScoreWall.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Map\\ScoreWall.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Map\\ScoreWall.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T07:44:56.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Star.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Star\\Star.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Star\\Star.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Star\\Star.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Star\\Star.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T10:10:41.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LockedDoor.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Map\\LockedDoor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\LockedDoor.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Map\\LockedDoor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Map\\LockedDoor.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwA8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T07:12:35.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "KeyItem.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Map\\KeyItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\KeyItem.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Map\\KeyItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Map\\KeyItem.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAnwCUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T07:11:17.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ScoreManager.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Manager\\ScoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\ScoreManager.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Manager\\ScoreManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\ScoreManager.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAASwBkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T10:04:12.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConsumableItem.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Map\\ConsumableItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\ConsumableItem.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Map\\ConsumableItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Map\\ConsumableItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T09:18:55.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerAnimation.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Player\\PlayerAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimation.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Player\\PlayerAnimation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAnimation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T07:52:28.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NPCController.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\NPC\\NPCController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPC\\NPCController.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\NPC\\NPCController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPC\\NPCController.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAowK4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T08:03:31.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Manager\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\UIManager.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Manager\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\UIManager.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAjwDwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T09:47:01.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SecretDocument.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Map\\SecretDocument.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\SecretDocument.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Map\\SecretDocument.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Map\\SecretDocument.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T08:31:48.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InteractableNPC.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\NPC\\InteractableNPC.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPC\\InteractableNPC.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\NPC\\InteractableNPC.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPC\\InteractableNPC.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvxEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T11:33:51.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LevelPortal.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\Map\\LevelPortal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\LevelPortal.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\Map\\LevelPortal.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Map\\LevelPortal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T12:13:55.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NPCAnimation.cs",
+              "DocumentMoniker": "D:\\unity\\My project\\Assets\\Scripts\\NPC\\NPCAnimation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPC\\NPCAnimation.cs",
+              "ToolTip": "D:\\unity\\My project\\Assets\\Scripts\\NPC\\NPCAnimation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPC\\NPCAnimation.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T08:03:42.027Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
