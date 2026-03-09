@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     // 在 PlayerController.cs 中添加
     [Header("背包系统")]
     public int keyCount = 0; // 当前持有的钥匙数量
+    public int DestroyScore = 10; // 销毁物体获得的分数
 
     public GameObject startPoint;
 
@@ -125,7 +126,7 @@ public class PlayerController : MonoBehaviour
                 // 执行销毁
                 obj.GetComponent<ConsumableItem>().Collect(); 
                 // 联动：增加分数
-                ScoreManager.Instance.AddScore(50);
+                ScoreManager.Instance.AddScore(DestroyScore);
             }
             else if (obj.CompareTag("door"))
             {
