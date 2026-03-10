@@ -164,6 +164,7 @@ public class AngelState : IPlayerState
     public void EnterState(PlayerController player)
     {
         player.Animator.SetLayerWeight(1, 0f);
+        Camera.main.cullingMask &= ~(1 << LayerMask.NameToLayer("Demon"));
     }
     public void ExecuteSkill(PlayerController player)
     {
@@ -179,6 +180,7 @@ public class DemonState : IPlayerState
     public void EnterState(PlayerController player)
     {
         player.Animator.SetLayerWeight(1, 1f);
+        Camera.main.cullingMask |= (1 << LayerMask.NameToLayer("Demon"));
     }
     public void ExecuteSkill(PlayerController player)
     {

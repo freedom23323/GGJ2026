@@ -3032,7 +3032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2265437444653865795, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2765785494773938617, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
       propertyPath: m_LocalScale.x
@@ -3100,6 +3100,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7501852238334139614, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501852238334139614, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5479,7 +5483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7118650879893722723, guid: eb2a1855cda968b429b8cb7c9530a37d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8158194843821505962, guid: eb2a1855cda968b429b8cb7c9530a37d, type: 3}
       propertyPath: m_LocalScale.x
@@ -5868,10 +5872,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4103692384074461715}
     m_Modifications:
-    - target: {fileID: 2680346844463583086, guid: 529200e394d495347bbd4df14e2e1385, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 55edf2263fd89d3418e9085f07c41f35, type: 3}
     - target: {fileID: 5792692527164200154, guid: 529200e394d495347bbd4df14e2e1385, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6089969

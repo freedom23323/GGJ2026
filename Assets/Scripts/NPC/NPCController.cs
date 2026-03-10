@@ -21,7 +21,8 @@ public class NPCController : MonoBehaviour
 
     [Header("引用与设置")]
     public float detectDistance = 4f;
-    public Transform patrolPoint;
+    public Transform PatrolPoint;
+    private Vector3 destination;
     private bool _isGameOver = false;
 
     public PlayerController _player;
@@ -35,6 +36,7 @@ public class NPCController : MonoBehaviour
         IdleState = new NPCIdleState(this,_player);
         AngryState = new NPCAngryState(this, _player);
         MoveState = new NPCMoveState(this, _player);
+        destination= PatrolPoint.position;
     }
 
     private void OnEnable()
@@ -79,8 +81,8 @@ public class NPCController : MonoBehaviour
 
     // 辅助判定
     public bool IsPlayerTooClose() => Vector3.Distance(transform.position, _player.transform.position) < detectDistance;
-    public void MoveToTarget() => transform.position = Vector3.MoveTowards(transform.position, patrolPoint.position, 2f * Time.deltaTime);
-    public bool HasReachedDestination() => Vector3.Distance(transform.position, patrolPoint.position) < 0.2f;
+    public void MoveToTarget() => transform.position = Vector3.MoveTowards(transform.position, destination, 2f * Time.deltaTime);
+    public bool HasReachedDestination() => Vector3.Distance(transform.position,destination) < 0.2f;
 }
 public interface IState
 {

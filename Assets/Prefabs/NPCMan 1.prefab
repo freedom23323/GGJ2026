@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: AngrySprite
       value: 
       objectReference: {fileID: 5865302355996007962}
+    - target: {fileID: 7809376021294773394, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
+      propertyPath: PatrolPoint
+      value: 
+      objectReference: {fileID: 2137381864343569167}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -64,6 +68,11 @@ PrefabInstance:
       addedObject: {fileID: 2547516543415071701}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
+--- !u!4 &2137381864343569167 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1588741347835609319, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
+  m_PrefabInstance: {fileID: 839312946914395112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6064872135733725724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6885748462813104628, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
