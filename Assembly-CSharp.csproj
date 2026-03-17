@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1E981750-D248-28D9-7629-4D5A5BCFF26D}</ProjectGuid>
+    <ProjectGuid>{32C3BDE6-E125-3128-82C1-25D0441455A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,7 +55,7 @@
     <UnityVersion>2022.3.13f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.13f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.13f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Map\ScoreWall.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCAnimation.cs" />
     <Compile Include="Assets\Scripts\Manager\MapManager.cs" />
+    <Compile Include="Assets\Scripts\ImageZoomAtPlayer.cs" />
     <Compile Include="Assets\Scripts\Map\LockedDoor.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCController.cs" />
     <Compile Include="Assets\Scripts\NPC\InteractableNPC.cs" />
