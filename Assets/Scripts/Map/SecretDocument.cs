@@ -5,6 +5,9 @@ public class SecretDocument : MonoBehaviour
     [Header("配置")]
     public AudioClip winSound; // 胜利音效（可选）
 
+    [Header("卷轴")]
+    public GameObject ScrollMask;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -16,8 +19,7 @@ public class SecretDocument : MonoBehaviour
                 AudioSource.PlayClipAtPoint(winSound, transform.position);
             }
 
-            // 2. 通知 GameManager 触发胜利
-            GameManager.Instance.TriggerVictory();
+            ScrollMask.SetActive(true); // 开启卷轴
 
             // 3. 销毁文件本身（视觉上被拿走了）
             //Destroy(gameObject);

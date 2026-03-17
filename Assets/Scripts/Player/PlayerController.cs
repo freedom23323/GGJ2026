@@ -28,6 +28,9 @@ public class PlayerController : MonoBehaviour
     private Vector3 localScale;
 
     public static Action<string> PlayerExecuteSkillEvent;
+
+    [Header("æÌ÷·")]
+    public GameObject ScrollMask;
     public void AddKey()
     {
         keyCount++;
@@ -73,6 +76,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             ExecuteSkill();
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            ScrollMask.SetActive(true);
         }
 
         UpdateAnimation();
@@ -164,6 +171,7 @@ public class AngelState : IPlayerState
     public void EnterState(PlayerController player)
     {
         player.Animator.SetLayerWeight(1, 0f);
+        Camera.main.cullingMask &= ~(1 << LayerMask.NameToLayer("Demon"));
     }
     public void ExecuteSkill(PlayerController player)
     {
@@ -179,6 +187,7 @@ public class DemonState : IPlayerState
     public void EnterState(PlayerController player)
     {
         player.Animator.SetLayerWeight(1, 1f);
+        Camera.main.cullingMask |= (1 << LayerMask.NameToLayer("Demon"));
     }
     public void ExecuteSkill(PlayerController player)
     {
