@@ -1,4 +1,48 @@
-Library/
-UserSettings/
+# 这份文件应该放在 Unity 项目的根目录下（与 Assets 文件夹同级）
+
+# Unity 自动生成的无用/缓存目录
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+
+# 内存截图和录屏（通常体积极大）
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# IDE 和编辑器自动生成的文件 (Visual Studio, Rider 等)
+.vs/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# 自动生成的 Meta 文件（仅限缓存文件的 meta）
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# 崩溃报告
+sysinfo.txt
+
+# 打包输出的文件
+*.apk
+*.aab
+*.unitypackage
+*.app
