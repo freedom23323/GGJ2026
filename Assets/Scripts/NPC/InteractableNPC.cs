@@ -14,6 +14,14 @@ public class InteractableNPC : MonoBehaviour
 
     void Update()
     {
+        if (isPlayerInZone)
+        {
+            interactionUI.SetActive(true);
+        }
+        else
+        {
+            interactionUI.SetActive(false);
+        }
         // 只有当玩家在范围内，才检测按键
         if (isPlayerInZone && Input.GetKeyDown(KeyCode.F))
         {
@@ -22,6 +30,10 @@ public class InteractableNPC : MonoBehaviour
             TriggerDialogue();
             // 触发对话后，隐藏“按 F”提示，避免视觉干扰
             interactionUI.SetActive(false);
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            UIManager.Instance.HideDialogue();
         }
     }
 

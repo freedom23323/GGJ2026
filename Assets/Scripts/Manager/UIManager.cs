@@ -22,7 +22,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public float typingSpeed = 0.05f; // 每个字的间隔时间
     public bool isDialogueActive = false;
-    public Image StoryImage;
+    public GameObject StoryPanel;
 
     private Coroutine typingCoroutine;
 
@@ -104,7 +104,7 @@ public class UIManager : MonoBehaviour
     public void StartGame()
     {
         GameManager.Instance.UpdateState(GameState.Playing);
-        StoryImage.gameObject.SetActive(true);
+        StoryPanel.SetActive(true);
     }
     public void ResumeGame() => GameManager.Instance.UpdateState(GameState.Playing);
 
