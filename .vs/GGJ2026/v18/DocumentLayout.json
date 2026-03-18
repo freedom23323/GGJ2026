@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|c:\\users\\10632\\desktop\\sparkle2\\ggj2026\\assets\\scripts\\map\\secretdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\secretdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|c:\\users\\10632\\desktop\\sparkle2\\ggj2026\\assets\\scripts\\npc\\interactablenpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc\\interactablenpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|c:\\users\\10632\\desktop\\sparkle2\\ggj2026\\assets\\scripts\\story\\scrollclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|c:\\users\\10632\\desktop\\sparkle2\\ggj2026\\assets\\scripts\\story\\storybegin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\story\\storybegin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\assets\\scripts\\story\\scrollclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\story\\scrollclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|c:\\users\\10632\\desktop\\sparkle2\\ggj2026\\assets\\scripts\\manager\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|c:\\users\\10632\\desktop\\sparkle2\\ggj2026\\assets\\scripts\\npc\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc\\npccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\assets\\scripts\\manager\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\assets\\scripts\\map\\secretdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\map\\secretdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E981750-D248-28D9-7629-4D5A5BCFF26D}|Assembly-CSharp.csproj|C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Manager\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,45 +43,83 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "InteractableNPC.cs",
+              "DocumentMoniker": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\NPC\\InteractableNPC.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPC\\InteractableNPC.cs",
+              "ToolTip": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\NPC\\InteractableNPC.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPC\\InteractableNPC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T10:17:16.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NPCController.cs",
+              "DocumentMoniker": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\NPC\\NPCController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NPC\\NPCController.cs",
+              "ToolTip": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\NPC\\NPCController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NPC\\NPCController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAEwEAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T10:05:13.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "SecretDocument.cs",
               "DocumentMoniker": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Map\\SecretDocument.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Map\\SecretDocument.cs",
               "ToolTip": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Map\\SecretDocument.cs",
               "RelativeToolTip": "Assets\\Scripts\\Map\\SecretDocument.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T09:54:08.691Z",
-              "EditorCaption": ""
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvwsAAAAFAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN3SURBVEhL7VRBaxtnEH3zrWw5siy7iSUHKlmlcuRgkVSkqSGXNqZgu2DqJnjXl95y68WgHNqj/0BUfOklBJdCoVk5pIVA4pKD00tJoaWHSBQjxam1TlRtbbO24mRl7UwPsowSaG\u002B9tHm37\u002BO9me\u002B9\u002BRjgFf7zIABYfbwartQq4cXiIu4/uY\u002BtWgWDwUHoJ3RMD3/owvFbyWTSbYmu/XItrHlayOl1rLnknLuwuuDvdfxRT\u002BvYuXTmkt3eQAEAa6yzj00wmxpgQinTU2Sypkzmjmy9qx5rFxFEZ83LBnYDMQA4KJ4liN7OAwAfAHxXvBnZ5/1Ud0c3YsHoSp3r\u002BaG\u002BhLHtbofvrN8mhvjbRcu/L0cAGaJG8/7Wxl2/JpQAEGnnoRXR24tvzQc7gp\u002BdHXjH6uvs\u002BxyadofZy645D89t1Mq2EhjGyY\u002BrlVol/HV\u002BEU/cPz4BZFKEMkpJkUEJgmQhtNzj7/5i5GgaQQTtpdklWwGAVbNQdIrWg60HGUUdZmgnZLEnl0tOMbf5/E9U6lsgiE4KJvvIBGAAFCUlVxhkHhSPATBYyFSAqXzQ0YqoznW4Xt39aePH0vLs3daQiqmrwzmlqKChUSWSggiWpOn7PQhSAH1PgA2hfgAGCHkRvicQkJLCYUSvLfTMi0AnZmM78zTfyu/v8DL/6EJwpOkES9tzu/PtXNV\u002B\u002BDfwjw5SV4fPK0UpDQ1z7synqce16vmvfvsS1b1KMyJCDoANwWFEAV/g3un\u002BNEKdwZXrF26s\u002BACgy9cFjXz\u002B1LFU4t0fxqqVWmUnEopEb6/dmnm6XxsTRSvsqZQi0QkABGEAIYhMCMgliB\u002BgEAQpgoqQAMywAawoAEj2ncSpY6eip/vTVxpo6JFQJMrsZeM9bxhHtACCCAIKJgkbJGw0Xy6WaJQhZkOEMiApg5AjYcNjGHKETLR\u002B0UdDF\u002BE2nvvXnIdDv9o/69auNXJ2YPRcPBQPp8NpW5hwsAJsAJi9qduAuNSQ0jf6jfzMtzOiCbkA7OsXcvkyllspN4c8MThhjw6MFjafbRYeOY8iTt0ZW99dt493Hy9MJ6ZLU8mpwz0EAOOxSXs8/kHp/TcnXQCYen3KnYhPlsZjky/sIbQa\u002BMRnisAQJoNJGZ6QoYgNBowGcaYz3Fl\u002BSWWycGavZ68MAE6vY3nCl6FgvsB7hf8H/gL\u002B2aNVwu31ogAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-03-16T09:54:08.691Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "StoryBegin.cs",
+              "DocumentMoniker": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Story\\StoryBegin.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Story\\StoryBegin.cs",
+              "ToolTip": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Story\\StoryBegin.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Story\\StoryBegin.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T09:06:41.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ScrollClick.cs",
               "DocumentMoniker": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Story\\ScrollClick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Story\\ScrollClick.cs",
               "ToolTip": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Story\\ScrollClick.cs",
               "RelativeToolTip": "Assets\\Scripts\\Story\\ScrollClick.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwB4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-16T09:52:00.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "UIManager.cs",
               "DocumentMoniker": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Manager\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\UIManager.cs",
               "ToolTip": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Manager\\UIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\UIManager.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAkwGkAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAArwGkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-16T09:51:47.903Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\10632\\Desktop\\Sparkle2\\GGJ2026\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
