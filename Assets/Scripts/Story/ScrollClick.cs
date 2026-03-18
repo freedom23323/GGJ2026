@@ -10,7 +10,7 @@ public class ScrollClick : MonoBehaviour
 
     void Start()
     {
-        img = GetComponentInChildren<Image>();
+        img = transform.GetChild(0).GetComponent<Image>();
         img.sprite = dialogueSprites[index];
     }
 

@@ -812,11 +812,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1504620514346296294, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.07
+      value: 4.11
       objectReference: {fileID: 0}
     - target: {fileID: 1504620514346296294, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.73
+      value: -8.3
       objectReference: {fileID: 0}
     - target: {fileID: 4452821923806108410, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
       propertyPath: m_Color.a
@@ -1125,7 +1125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7118650879893722723, guid: eb2a1855cda968b429b8cb7c9530a37d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8158194843821505962, guid: eb2a1855cda968b429b8cb7c9530a37d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1683,11 +1683,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1504620514346296294, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.87
+      value: -4.21
       objectReference: {fileID: 0}
     - target: {fileID: 1504620514346296294, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.52
+      value: -3.02
       objectReference: {fileID: 0}
     - target: {fileID: 6729006810927016693, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
       propertyPath: m_LocalScale.x
@@ -3788,12 +3788,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -17.930302, y: 13.703201}
-      - {x: -17.919113, y: 6.926402}
-      - {x: -18.259129, y: -13.2812605}
-      - {x: -18.000904, y: -12.334929}
-      - {x: 18.297972, y: -13.039387}
-      - {x: 21.971035, y: 15.870328}
+    - - {x: 0, y: 17.6996}
+      - {x: -25.386894, y: 17.862268}
+      - {x: -25.076977, y: -18.68239}
+      - {x: 22.889486, y: -18.575682}
+      - {x: 22.719223, y: 17.808918}
   m_UseDelaunayMesh: 0
 --- !u!1 &774285730
 GameObject:
@@ -5703,7 +5702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2265437444653865795, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2765785494773938617, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
       propertyPath: m_LocalScale.x
@@ -9809,11 +9808,11 @@ PrefabInstance:
       objectReference: {fileID: 2095361210}
     - target: {fileID: 5469195886313835102, guid: 19c7fa65f42875d429a7dd038bb57679, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.0066799
+      value: 0.018639866
       objectReference: {fileID: 0}
     - target: {fileID: 5469195886313835102, guid: 19c7fa65f42875d429a7dd038bb57679, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.635462
+      value: 3.1053033
       objectReference: {fileID: 0}
     - target: {fileID: 8119901089839909905, guid: 19c7fa65f42875d429a7dd038bb57679, type: 3}
       propertyPath: field of view
