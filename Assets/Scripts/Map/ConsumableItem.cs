@@ -3,7 +3,7 @@ using UnityEngine;
 public class ConsumableItem : MonoBehaviour
 {
     // 记录初始状态
-    private void OnEnable()
+    private void Start()
     {
         // 游戏开始或切换关卡时，将自己注册到重置列表中
         GameManager.Instance.RegisterConsumable(this);

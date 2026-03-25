@@ -1,64 +1,46 @@
 using System.Collections;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StoryBegin : MonoBehaviour
 {
-    [Header("对话图片")]
+    [Header("对话配置")]
     public Sprite[] dialogueSprites;
-    public Image dialogueImage;
+    public Image dialogueImage;       // 拖入 DialogueImage
+    public TextMeshProUGUI clickText; // 拖入 ClickText
 
-    [Header("演出图片")]
-    public Image mapImage;       // 第一张（放大）
-    public Image playingImage;   // 第二张（展示）
+    [Header("演出配置")]
+    public RectTransform storyPanel;  // 拖入 StoryPanel (要被放大的那一层)
+    public RectTransform zoomTarget;  // 拖入 ZoomTarget (提供目标位置和缩放的空节点)
 
-    private int index = 0;
+    [Header("演示")]
+    public Image playerImage;
 
     [Header("动画参数")]
     public float zoomDuration = 1.5f;
-    public float stayDuration = 3f;
-    public Transform player;
-    public RectTransform rect;
-    public RectTransform targetPoint;
 
+    private int index = 0;
     private bool isPlaying = false;
-
-    void SetZoomCenterToPlayer()
-    {
-        Vector2 screenPos = Camera.main.WorldToScreenPoint(player.position);
-
-        Vector2 localPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            this.rect,
-            screenPos,
-            null,
-            out localPoint
-        );
-
-        Vector2 pivot = new Vector2(
-            (localPoint.x / this.rect.rect.width) + 0.5f,
-            (localPoint.y / this.rect.rect.height) + 0.5f
-        );
-
-        RectTransform rect = transform as RectTransform;
-        rect.pivot = pivot;
-    }
 
     void Start()
     {
-        // 初始只显示对话
+        // 初始状态设置
         dialogueImage.gameObject.SetActive(true);
-        mapImage.gameObject.SetActive(true);
-        playingImage.gameObject.SetActive(false);
+        clickText.gameObject.SetActive(true);
+        zoomTarget.gameObject.SetActive(false);
+        playerImage.gameObject.SetActive(false);
 
-        dialogueImage.sprite = dialogueSprites[index];
-        rect= GetComponent<RectTransform>();
+        if (dialogueSprites != null && dialogueSprites.Length > 0)
+        {
+            dialogueImage.sprite = dialogueSprites[index];
+        }
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        // 只有在没播放动画时才接受点击
+        if (!isPlaying && Input.GetMouseButtonDown(0))
         {
             index++;
 
@@ -66,52 +48,49 @@ public class StoryBegin : MonoBehaviour
             {
                 dialogueImage.sprite = dialogueSprites[index];
             }
-            else if (!isPlaying)
+            else
             {
-                //SetZoomCenterToPlayer();
-                StartCoroutine(PlayStory());
                 isPlaying = true;
+                StartCoroutine(PlayStory());
             }
         }
     }
 
     IEnumerator PlayStory()
     {
-        // 关闭对话UI
+        // 1. 关闭对话UI，防止它们跟着 StoryPanel 一起被放大
         dialogueImage.gameObject.SetActive(false);
+        clickText.gameObject.SetActive(false);
+        playerImage.gameObject.SetActive(true);
 
-        // ===== ① 第一张图：放大 =====
-        playingImage.gameObject.SetActive(true);
+        // 2. 缓存初始状态与目标状态
+        Vector3 startScale = storyPanel.localScale;
+        Vector3 targetScale = zoomTarget.localScale;
 
-
-        Vector3 startScale = rect.localScale;
-        Vector3 targetScale = targetPoint.localScale;
-
-        Vector3 startPos = rect.position;
-        Vector3 targetPos = targetPoint.position;
+        Vector3 startPos = storyPanel.position;
+        Vector3 targetPos = zoomTarget.position;
 
         float t = 0;
 
+        // 3. 执行放大与移动动画
         while (t < zoomDuration)
         {
             t += Time.deltaTime;
-            float lerp = t / zoomDuration;
 
-            rect.localScale = Vector3.Lerp(startScale, targetScale, lerp);
-            rect.position = Vector3.Lerp(startPos, targetPos, lerp);
+            // 使用 SmoothStep 让动画有一个平滑的起步和刹车，手感更好
+            float lerp = Mathf.SmoothStep(0, 1, t / zoomDuration);
+
+            storyPanel.localScale = Vector3.Lerp(startScale, targetScale, lerp);
+            storyPanel.position = Vector3.Lerp(startPos, targetPos, lerp);
 
             yield return null;
         }
 
-        //// ===== ② 切第二张图 =====
+        // 4. 收尾：强制对齐最终数值，消除浮点数误差
+        storyPanel.localScale = targetScale;
+        storyPanel.position = targetPos;
 
-        //mapImage.gameObject.SetActive(false);
-        //playingImage.gameObject.SetActive(true);
-
-        //yield return new WaitForSeconds(stayDuration);
-
-        // ===== ③ 结束 =====
-        playingImage.gameObject.SetActive(false);
-        gameObject.SetActive(false);
+        // 5. 动画结束后的处理 (根据你的需求保留或修改)
+        gameObject.SetActive(false); // 关闭整个 StoryBeginPanel 
     }
 }

@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     public void AddKey()
     {
         keyCount++;
+        UIManager.Instance.UpdateKeyDisplay(keyCount); // 联动 UI 更新显示
     }
 
     // 在 PlayerController.cs 中

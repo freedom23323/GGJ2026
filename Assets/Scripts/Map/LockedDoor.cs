@@ -3,24 +3,43 @@ using UnityEngine;
 
 public class LockedDoor : MonoBehaviour
 {
+    [Header("玩家提示")]
+    public GameObject interactionUI; // 拖入刚才创建的 InteractionPrompt
+    private bool isPlayerInZone = false;
+    PlayerController player;
+    void Start()
+    {
+        interactionUI.SetActive(false); // 初始时隐藏提示
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            UIManager.Instance.HideDialogue();
+        }
+        if (!isPlayerInZone) return;
+        if (player != null && Input.GetKeyDown(KeyCode.F))
+        {
+            // 尝试消耗钥匙
+            if (player.TryConsumeKey())
+            {
+                StartCoroutine(DelayDestroy());
+            }
+            else
+            {
+                // 失败：显示英文提示
+                UIManager.Instance.ShowDialogue(gameObject, "Locked. Need a key.");
+            }
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            if (player != null)
-            {
-                // 尝试消耗钥匙
-                if (player.TryConsumeKey())
-                {
-                    StartCoroutine(DelayDestroy());
-                }
-                else
-                {
-                    // 失败：显示英文提示
-                    UIManager.Instance.ShowDialogue("Locked. Need a key.");
-                }
-            }
+            player = collision.gameObject.GetComponent<PlayerController>();
+            interactionUI.SetActive(true); // 显示“按 F”提示
+            isPlayerInZone = true;
         }
     }
 
@@ -32,17 +51,20 @@ public class LockedDoor : MonoBehaviour
             // 只有当门还没被销毁（即没有钥匙没打开）时，
             // 玩家撞了一下离开，需要立即隐藏提示 "Locked..."
             UIManager.Instance.HideDialogue();
+            interactionUI.SetActive(false); // 隐藏“按 F”提示
+            isPlayerInZone = false;
         }
     }
 
     IEnumerator DelayDestroy()
     {
         // 成功：显示英文提示
-        UIManager.Instance.ShowDialogue("Used a key to open the door.");
+        UIManager.Instance.ShowDialogue(gameObject, "Used a key to open the door.");
 
         // 播放开门音效或动画 (可选)
         // AudioSource.PlayClipAtPoint(openSound, transform.position);
         // 延时1秒
+        interactionUI.SetActive(false); // 隐藏“按 F”提示
         yield return new WaitForSeconds(1f);
         UIManager.Instance.HideDialogue();
         //Destroy(gameObject);

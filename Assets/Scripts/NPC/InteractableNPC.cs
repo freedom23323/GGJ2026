@@ -3,7 +3,7 @@ using TMPro;
 
 public class InteractableNPC : MonoBehaviour
 {
-    [Header("UI 引用")]
+    [Header("玩家提示")]
     public GameObject interactionUI; // 拖入刚才创建的 InteractionPrompt
 
     [Header("对话配置")]
@@ -11,6 +11,11 @@ public class InteractableNPC : MonoBehaviour
     [TextArea] public string demonDialogue;
 
     private bool isPlayerInZone = false;
+
+    private void Start()
+    {
+        if (interactionUI != null) interactionUI.SetActive(false);
+    }
 
     void Update()
     {
@@ -27,9 +32,8 @@ public class InteractableNPC : MonoBehaviour
         {
             // 如果对话框当前没开启，则触发对话
             //if (UIManager.Instance.isDialogueActive) return;
+            Debug.Log("玩家按下 F 键，触发对话");
             TriggerDialogue();
-            // 触发对话后，隐藏“按 F”提示，避免视觉干扰
-            interactionUI.SetActive(false);
         }
         if (Input.GetMouseButtonDown(0))
         {
@@ -40,9 +44,9 @@ public class InteractableNPC : MonoBehaviour
     private void TriggerDialogue()
     {
         PlayerController player = FindObjectOfType<PlayerController>();
-        string currentDialogue = (player.GetCurrentState() =="AngelState") ? angelDialogue : demonDialogue;
+        string currentDialogueSentence = (player.GetCurrentState() =="AngelState") ? angelDialogue : demonDialogue;
 
-        UIManager.Instance.ShowDialogue(currentDialogue);
+        UIManager.Instance.ShowDialogue(gameObject, currentDialogueSentence);
     }
 
     // --- 核心逻辑：触发 UI 提示 ---

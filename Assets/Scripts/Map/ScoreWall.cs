@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class ScoreWall : MonoBehaviour
@@ -5,6 +7,8 @@ public class ScoreWall : MonoBehaviour
     [Header("配置")]
     public int requiredScore = 100; // 在 Inspector 里可以随时改成 200 或 500
     [TextArea] public string failMessage = "You need 100 score to break this wall.";
+    [Header("淡出动画")]
+    public float fadeTime = 0.5f; // 淡出时长
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,20 +21,11 @@ public class ScoreWall : MonoBehaviour
             // 2. 判断分数是否足够
             if (currentScore >= requiredScore)
             {
-                // --- 成功逻辑 ---
-                // 播放破碎音效 (可选)
-                // AudioSource.PlayClipAtPoint(breakSound, transform.position);
-
-                // 显示成功提示（可选，或者直接销毁更干脆）
-                //UIManager.Instance.ShowDialogue("Power overflowing!");
-
-                // 销毁墙壁
-                //Destroy(gameObject);
-                GetComponent<ConsumableItem>().Collect();
+                StartCoroutine(FadeAndHide());
             }
             else
             {
-                UIManager.Instance.ShowDialogue(failMessage);
+                UIManager.Instance.ShowDialogue(gameObject,failMessage);
             }
         }
     }
@@ -43,5 +38,27 @@ public class ScoreWall : MonoBehaviour
             // 玩家撞墙后发现过不去，转身离开时立即隐藏提示
             UIManager.Instance.HideDialogue();
         }
+    }
+
+    // 淡出协程
+    IEnumerator FadeAndHide()
+    {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        Color color = spriteRenderer.color;
+        float alpha = color.a;
+
+        // 逐渐变透明
+        while (alpha > 0)
+        {
+            alpha -= Time.deltaTime / fadeTime;
+            spriteRenderer.color = new Color(color.r, color.g, color.b, alpha);
+            yield return null;
+        }
+
+        // 完全透明后，执行隐藏
+        GetComponent<ConsumableItem>().Collect();
+
+        // 重置透明度（下次复活用）
+        spriteRenderer.color = new Color(color.r, color.g, color.b, 1);
     }
 }

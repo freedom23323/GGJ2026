@@ -28,6 +28,38 @@ public class NPCController : MonoBehaviour
     public PlayerController _player;
     public bool IsPlayerExecuteSkill = false;
     public GameObject AngrySprite;
+
+    [Header("提示配置")]
+    [TextArea] public string Dialogue = "切换为天使试试呢？";
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+            if (player.GetCurrentState() == "AngelState") return;
+
+            UIManager.Instance.ShowDialogue((int)DialogueBoxType.AngelDialogueBox, Dialogue);
+        }
+    }
+
+    // 离开碰撞 → 延时0.5秒关闭
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // 启动协程延迟关闭
+            StartCoroutine(HideDialogueDelay(0.5f));
+        }
+    }
+
+    // 延时隐藏对话框协程
+    IEnumerator HideDialogueDelay(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        UIManager.Instance.HideDialogue();
+    }
+
     private void Awake()
     {
         StateMachine = new StateMachine();
@@ -48,7 +80,17 @@ public class NPCController : MonoBehaviour
     public void SetPlayerExecuteSkill(string Message)
     {
         Debug.Log("NPC 收到玩家技能事件: " + Message);
-        if(Message== "AngelState") IsPlayerExecuteSkill = true;
+        if(Message== "AngelState")
+        {
+            IsPlayerExecuteSkill = true;
+            StartCoroutine(DelayResetPlayerExecuteSkill(1f)); // 3秒后重置
+        }
+    }
+
+    IEnumerator DelayResetPlayerExecuteSkill(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        UnsetPlayerExecuteSkill();
     }
 
     public void UnsetPlayerExecuteSkill()

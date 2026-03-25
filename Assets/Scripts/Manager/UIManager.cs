@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Unity.VisualScripting.FullSerializer;
 
 public class UIManager : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class UIManager : MonoBehaviour
 
     [Header("UI 文本引用")]
     public TextMeshProUGUI scoreText;
+    [Header("等级显示")]
+    public TMPro.TextMeshProUGUI levelText;
+    [Header("钥匙")]
+    public TextMeshProUGUI KeyText;
 
     [Header("UI 面板引用")]
     public GameObject mainMenuPanel;
@@ -20,6 +25,9 @@ public class UIManager : MonoBehaviour
 
     public GameObject dialogueBox; // 对话框 UI 物体
     public TextMeshProUGUI dialogueText;
+
+    public GameObject[] dialogueBoxs; // 预设的对话框列表，角色专属对话框配置在 DialogBoxConfig 中
+
     public float typingSpeed = 0.05f; // 每个字的间隔时间
     public bool isDialogueActive = false;
     public GameObject StoryPanel;
@@ -28,8 +36,36 @@ public class UIManager : MonoBehaviour
 
     [Header("胜利面板")]
     public GameObject victoryPanel;
-    public void ShowDialogue(string content)
+    public void ShowDialogue(GameObject speaker,string content)
     {
+        if (dialogueBox != null)
+        {
+            dialogueBox.SetActive(false);
+        }
+        // 获取角色身上的对话框配置
+        DialogBoxConfig config = speaker.GetComponent<DialogBoxConfig>();
+        if (config == null)
+        {
+            Debug.LogWarning($"角色{speaker.name}未配置专属对话框");
+            return;
+        }
+        UpdateDialogueBox(config);
+        isDialogueActive = true;
+        dialogueBox.SetActive(true);
+
+        // 如果正在打字，先停止之前的
+        if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+        typingCoroutine = StartCoroutine(TypeSentence(content));
+    }
+
+    public void ShowDialogue(int index, string content)
+    {
+        if (dialogueBox != null)
+        {
+            dialogueBox.SetActive(false);
+        }
+        // 获取角色身上的对话框配置
+        UpdateDialogueBox(index);
         isDialogueActive = true;
         dialogueBox.SetActive(true);
 
@@ -50,9 +86,6 @@ public class UIManager : MonoBehaviour
     }
     public void HideDialogue() => dialogueBox.SetActive(false);
 
-    [Header("等级显示")]
-    public TMPro.TextMeshProUGUI levelText;
-
     public void UpdateLevelDisplay(int levelNumber)
     {
         if (levelText != null)
@@ -61,7 +94,25 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void UpdateKeyDisplay(int keyCount)
+    {
+        if (KeyText != null)
+        {
+            KeyText.text = "key: " + keyCount.ToString();
+        }
+    }
 
+    private void UpdateDialogueBox(DialogBoxConfig config)
+    {
+        dialogueBox = config.dialogBox;
+        dialogueText= dialogueBox.GetComponentInChildren<TextMeshProUGUI>();
+    }
+
+    private void UpdateDialogueBox(int index)
+    {
+        dialogueBox = dialogueBoxs[index];
+        dialogueText = dialogueBox.GetComponentInChildren<TextMeshProUGUI>();
+    }
 
     void Awake()
     {
