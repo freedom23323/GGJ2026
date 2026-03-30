@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 50
+  pickupSound: {fileID: 8300000, guid: 5314f0b1d1321c04cb86d2f0042965b3, type: 3}
 --- !u!58 &6896509686134766314
 CircleCollider2D:
   m_ObjectHideFlags: 0

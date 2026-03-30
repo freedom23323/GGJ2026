@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 55edf2263fd89d3418e9085f07c41f35, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 1, g: 0.97169805, b: 0.97169805, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -146,4 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205e797299d168c4790d0d887b54be99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialogue: "\u5207\u6362\u4E3A\u6076\u9B54\u8BD5\u8BD5\u5462\uFF1F"
+  Dialogue: "\u8FC7\u4E0D\u53BB\u4E86\u5427\uFF1F\u8FD8\u5F97\u662F\u9760\u6211\u5427"
+  delayTime: 1.5

@@ -7,14 +7,28 @@ public class Ball : MonoBehaviour
     [Header("Ã· æ≈‰÷√")]
     [TextArea] public string Dialogue = "«–ªªŒ™∂Òƒß ‘ ‘ƒÿ£ø";
 
+    [Header("µØ¥∞πÿ±’—” ±")]
+    public float delayTime = 0.5f;
+
+    private bool isPlayerInZone = false;
+    private bool isVaild = false;
+
+    void Update()
+    {
+        if (isPlayerInZone && Input.GetMouseButtonDown(0))
+        {
+            UIManager.Instance.HideDialogue();
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            isPlayerInZone = true;
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
             if (player.GetCurrentState() == "DemonState") return;
 
-            UIManager.Instance.ShowDialogue((int)DialogueBoxType.DemonDialogueBox, Dialogue);
+            isVaild = UIManager.Instance.ShowDialogueWithVaild((int)DialogueBoxType.DemonDialogueBox, Dialogue);       
         }
     }
 
@@ -23,8 +37,11 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            isPlayerInZone = false;
+            if (!isVaild) return;
             // ∆Ù∂Ø–≠≥Ã—”≥Ÿπÿ±’
-            StartCoroutine(HideDialogueDelay(0.5f));
+            StartCoroutine(HideDialogueDelay(delayTime));
+
         }
     }
 
@@ -38,5 +55,6 @@ public class Ball : MonoBehaviour
     private void OnDisable()
     {
         StopAllCoroutines();
+        if (isVaild) UIManager.Instance.HideDialogue();
     }
 }

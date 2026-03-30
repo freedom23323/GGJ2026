@@ -54,11 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6885748462813104628, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.94
+      value: -7.64
       objectReference: {fileID: 0}
     - target: {fileID: 6885748462813104628, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6
+      value: 2.37
       objectReference: {fileID: 0}
     - target: {fileID: 6885748462813104628, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -91,6 +91,10 @@ PrefabInstance:
     - target: {fileID: 6885748462813104628, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809376021294773394, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
+      propertyPath: Dialogue
+      value: "\u5582\uFF0C\u4F60\u628A\u4ED6\u4EEC\u60F9\u751F\u6C14\u4E86\uFF01"
       objectReference: {fileID: 0}
     - target: {fileID: 7809376021294773394, guid: 4b0af8046fcdbd249b4c72945f49790b, type: 3}
       propertyPath: AngrySprite

@@ -38,10 +38,7 @@ public class UIManager : MonoBehaviour
     public GameObject victoryPanel;
     public void ShowDialogue(GameObject speaker,string content)
     {
-        if (dialogueBox != null)
-        {
-            dialogueBox.SetActive(false);
-        }
+        if (dialogueBox.activeInHierarchy) return; // 已经有对话框在显示，避免覆盖
         // 获取角色身上的对话框配置
         DialogBoxConfig config = speaker.GetComponent<DialogBoxConfig>();
         if (config == null)
@@ -55,14 +52,21 @@ public class UIManager : MonoBehaviour
 
     public void ShowDialogue(int index, string content)
     {
-        if (dialogueBox != null)
-        {
-            dialogueBox.SetActive(false);
-        }
+        if (dialogueBox.activeInHierarchy) return; // 已经有对话框在显示，避免覆盖
         // 获取角色身上的对话框配置
         UpdateDialogueBox(index);
         ShowSentence(content);
     }
+
+    public bool ShowDialogueWithVaild(int index, string content)
+    {
+        if (dialogueBox.activeInHierarchy) return false; // 已经有对话框在显示，避免覆盖
+        // 获取角色身上的对话框配置
+        UpdateDialogueBox(index);
+        ShowSentence(content);
+        return true;
+    }
+
     private void ShowSentence(string content)
     {
         HideHudPanel();

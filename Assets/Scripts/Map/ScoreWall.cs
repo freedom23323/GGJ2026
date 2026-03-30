@@ -9,6 +9,8 @@ public class ScoreWall : MonoBehaviour
     [TextArea] public string failMessage = "You need 100 score to break this wall.";
     [Header("淡出动画")]
     public float fadeTime = 0.5f; // 淡出时长
+    [Header("音效设置")]
+    public AudioClip fadeSound; // 音效
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -46,7 +48,7 @@ public class ScoreWall : MonoBehaviour
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         Color color = spriteRenderer.color;
         float alpha = color.a;
-
+        if (fadeSound != null) AudioSource.PlayClipAtPoint(fadeSound, transform.position);
         // 逐渐变透明
         while (alpha > 0)
         {

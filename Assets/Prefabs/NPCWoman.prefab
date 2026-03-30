@@ -61,6 +61,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2380176011837742108, guid: c396997a7946d7646b2b32d77b50d4e3, type: 3}
+      propertyPath: Dialogue
+      value: "\u5582\uFF0C\u4F60\u628A\u4ED6\u4EEC\u60F9\u751F\u6C14\u4E86\uFF01"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380176011837742108, guid: c396997a7946d7646b2b32d77b50d4e3, type: 3}
       propertyPath: AngrySprite
       value: 
       objectReference: {fileID: 2432833102936874194}

@@ -3,10 +3,15 @@ using UnityEngine;
 
 public class LockedDoor : MonoBehaviour
 {
+    [Header("音效设置")]
+    public AudioClip Sound; //音效
     [Header("玩家提示")]
     public GameObject interactionUI; // 拖入刚才创建的 InteractionPrompt
     private bool isPlayerInZone = false;
     PlayerController player;
+
+    public string successDialogue= "Used a key to open the door.";
+    public string failDialogue = "Locked. Need a key.";
     void Start()
     {
         interactionUI.SetActive(false); // 初始时隐藏提示
@@ -29,7 +34,7 @@ public class LockedDoor : MonoBehaviour
             else
             {
                 // 失败：显示英文提示
-                UIManager.Instance.ShowDialogue(gameObject, "Locked. Need a key.");
+                UIManager.Instance.ShowDialogue(gameObject, failDialogue);
             }
         }
     }
@@ -59,10 +64,10 @@ public class LockedDoor : MonoBehaviour
     IEnumerator DelayDestroy()
     {
         // 成功：显示英文提示
-        UIManager.Instance.ShowDialogue(gameObject, "Used a key to open the door.");
+        UIManager.Instance.ShowDialogue(gameObject, successDialogue);
 
-        // 播放开门音效或动画 (可选)
-        // AudioSource.PlayClipAtPoint(openSound, transform.position);
+        // 播放开门音效
+        AudioSource.PlayClipAtPoint(Sound, transform.position);
         // 延时1秒
         interactionUI.SetActive(false); // 隐藏“按 F”提示
         yield return new WaitForSeconds(1f);

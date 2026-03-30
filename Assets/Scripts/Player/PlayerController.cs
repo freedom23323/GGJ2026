@@ -1,8 +1,9 @@
-using UnityEngine;
-using System.Collections;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class PlayerController : MonoBehaviour
 {
@@ -31,6 +32,14 @@ public class PlayerController : MonoBehaviour
 
     [Header("卷轴")]
     public GameObject ScrollMask;
+
+    [Header("音效设置")]
+    public AudioClip AngelSound; //天使BGM音效
+    public AudioClip DemonSound; //恶魔BGM音效
+    public AudioClip BallSound; //击碎球音效
+
+    // 存每个clip播放到哪里
+    private Dictionary<AudioClip, float> clipTimeDict = new Dictionary<AudioClip, float>();
     public void AddKey()
     {
         keyCount++;
@@ -47,6 +56,7 @@ public class PlayerController : MonoBehaviour
         }
         return false; // 消耗失败（没有钥匙）
     }
+
     void Awake()
     {
         Animator = GetComponent<Animator>();
@@ -57,6 +67,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         TransitionTo(angelState); // 初始为天使
+        //InitiateAudioSource(AngelSound);
     }
 
     void Update()
@@ -132,7 +143,8 @@ public class PlayerController : MonoBehaviour
             if (obj.CompareTag("ball"))
             {
                 // 执行销毁
-                obj.GetComponent<ConsumableItem>().Collect(); 
+                obj.GetComponent<ConsumableItem>().Collect();
+                if (BallSound != null) AudioSource.PlayClipAtPoint(BallSound, obj.transform.position);
                 // 联动：增加分数
                 ScoreManager.Instance.AddScore(DestroyScore);
             }
@@ -171,6 +183,7 @@ public class AngelState : IPlayerState
 {
     public void EnterState(PlayerController player)
     {
+        BGMManager.Instance.PlayBGM(player.AngelSound);
         player.Animator.SetLayerWeight(1, 0f);
         Camera.main.cullingMask &= ~(1 << LayerMask.NameToLayer("Demon"));
     }
@@ -187,6 +200,7 @@ public class DemonState : IPlayerState
 {
     public void EnterState(PlayerController player)
     {
+        BGMManager.Instance.PlayBGM(player.DemonSound);
         player.Animator.SetLayerWeight(1, 1f);
         Camera.main.cullingMask |= (1 << LayerMask.NameToLayer("Demon"));
     }

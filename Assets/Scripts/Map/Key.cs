@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    [Header("设置")]
+    [Header("音效设置")]
     public AudioClip pickupSound; // 可选：拾取音效
     [Header("玩家提示")]
     public GameObject interactionUI; // 拖入刚才创建的 InteractionPrompt
     private bool isPlayerInZone = false;
     PlayerController player;
+    public string Dialogue = "get a key!";
     private void Start()
     {
         if (interactionUI != null) interactionUI.SetActive(false); // 初始时隐藏提示
@@ -23,11 +24,10 @@ public class Key : MonoBehaviour
         if (player != null && Input.GetKeyDown(KeyCode.F))
         {
             // 联动 UI：提示获得钥匙
-            UIManager.Instance.ShowDialogue(gameObject, "get a key!");
+            UIManager.Instance.ShowDialogue(gameObject, Dialogue);
             // 1. 增加钥匙
             player.AddKey();
 
-            // 2. 播放音效 (如果 AudioManager 有的话，或者直接用 AudioSource)
             if (pickupSound != null) AudioSource.PlayClipAtPoint(pickupSound, transform.position);
 
             StartCoroutine(DelayDestroy());
