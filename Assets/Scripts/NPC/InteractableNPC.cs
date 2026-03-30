@@ -35,7 +35,7 @@ public class InteractableNPC : MonoBehaviour
             Debug.Log("玩家按下 F 键，触发对话");
             TriggerDialogue();
         }
-        if (Input.GetMouseButtonDown(0))
+        if (isPlayerInZone && Input.GetMouseButtonDown(0))
         {
             UIManager.Instance.HideDialogue();
         }

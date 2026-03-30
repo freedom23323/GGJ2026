@@ -50,12 +50,7 @@ public class UIManager : MonoBehaviour
             return;
         }
         UpdateDialogueBox(config);
-        isDialogueActive = true;
-        dialogueBox.SetActive(true);
-
-        // 如果正在打字，先停止之前的
-        if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-        typingCoroutine = StartCoroutine(TypeSentence(content));
+        ShowSentence(content);
     }
 
     public void ShowDialogue(int index, string content)
@@ -66,6 +61,11 @@ public class UIManager : MonoBehaviour
         }
         // 获取角色身上的对话框配置
         UpdateDialogueBox(index);
+        ShowSentence(content);
+    }
+    private void ShowSentence(string content)
+    {
+        HideHudPanel();
         isDialogueActive = true;
         dialogueBox.SetActive(true);
 
@@ -84,7 +84,15 @@ public class UIManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
     }
-    public void HideDialogue() => dialogueBox.SetActive(false);
+    public void HideDialogue()
+    {
+        dialogueBox.SetActive(false);
+        ShowHudPanel();
+    }
+
+    public void HideHudPanel() => hudPanel.SetActive(false);
+
+    public void ShowHudPanel() => hudPanel.SetActive(true);
 
     public void UpdateLevelDisplay(int levelNumber)
     {
