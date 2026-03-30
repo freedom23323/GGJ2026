@@ -3006,7 +3006,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4769487}
+  m_Offset: {x: 0, y: 0.56137234}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3017,7 +3017,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.69, y: 1.0061021}
+  m_Size: {x: 3.69, y: 0.78901345}
   m_EdgeRadius: 0
 --- !u!212 &416851867
 SpriteRenderer:
@@ -4749,11 +4749,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2137381864343569167, guid: fc63165fdb485eb4f94f75bb52b4b9c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.98
+      value: 10.7
       objectReference: {fileID: 0}
     - target: {fileID: 2137381864343569167, guid: fc63165fdb485eb4f94f75bb52b4b9c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.56
+      value: 6.49
       objectReference: {fileID: 0}
     - target: {fileID: 6064872135733725724, guid: fc63165fdb485eb4f94f75bb52b4b9c5, type: 3}
       propertyPath: m_LocalScale.x
@@ -7807,7 +7807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2265437444653865795, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2765785494773938617, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
       propertyPath: m_LocalScale.x
@@ -8210,7 +8210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: -844}
+  m_AnchoredPosition: {x: -10, y: -644}
   m_SizeDelta: {x: 160, y: 44.3229}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1221908251
@@ -9765,17 +9765,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MainMenu
+  m_text: "\u8FD4\u56DE\u4E3B\u83DC\u5355"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b336701992ce1c64bacddf93adac7ef2, type: 2}
+  m_sharedMaterial: {fileID: -4806846866662833539, guid: b336701992ce1c64bacddf93adac7ef2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4292856538
+  m_fontColor: {r: 0.85490197, g: 0.7921569, b: 0.8745098, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10443,7 +10443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 2012, y: 1716}
+  m_AnchoredPosition: {x: 2012, y: 1650}
   m_SizeDelta: {x: 2294.3538, y: 773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1766758265
@@ -10459,7 +10459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12987,11 +12987,11 @@ PrefabInstance:
       objectReference: {fileID: 2095361210}
     - target: {fileID: 5469195886313835102, guid: 19c7fa65f42875d429a7dd038bb57679, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.018639866
+      value: 0.018639868
       objectReference: {fileID: 0}
     - target: {fileID: 5469195886313835102, guid: 19c7fa65f42875d429a7dd038bb57679, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1053033
+      value: 3.1053035
       objectReference: {fileID: 0}
     - target: {fileID: 8119901089839909905, guid: 19c7fa65f42875d429a7dd038bb57679, type: 3}
       propertyPath: field of view
@@ -13433,7 +13433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7118650879893722723, guid: eb2a1855cda968b429b8cb7c9530a37d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8158194843821505962, guid: eb2a1855cda968b429b8cb7c9530a37d, type: 3}
       propertyPath: m_LocalScale.x
