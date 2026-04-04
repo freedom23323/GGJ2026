@@ -36,6 +36,7 @@ public class UIManager : MonoBehaviour
 
     [Header("胜利面板")]
     public GameObject victoryPanel;
+
     public void ShowDialogue(GameObject speaker,string content)
     {
         if (dialogueBox.activeInHierarchy) return; // 已经有对话框在显示，避免覆盖
@@ -161,6 +162,7 @@ public class UIManager : MonoBehaviour
         gameOverPanel?.SetActive(state == GameState.GameOver);
         hudPanel?.SetActive(state == GameState.Playing);
         victoryPanel?.SetActive(state == GameState.Victory);
+        SettingPanel?.SetActive(false);
     }
 
     // 按钮点击事件
