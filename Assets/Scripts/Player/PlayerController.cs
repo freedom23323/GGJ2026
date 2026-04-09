@@ -89,11 +89,12 @@ public class PlayerController : MonoBehaviour
         {
             ExecuteSkill();
         }
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.J))
         {
             ScrollMask.SetActive(true);
         }
-
+#endif
         UpdateAnimation();
     }
 
