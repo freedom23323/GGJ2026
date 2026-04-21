@@ -83,11 +83,23 @@ public class GameManager : MonoBehaviour
             allConsumables.Add(item);
     }
 
+    private List<MovableItem> allMovableItem = new List<MovableItem>();
+
+    public void RegisterMovable(MovableItem item)
+    {
+        if (!allMovableItem.Contains(item))
+            allMovableItem.Add(item);
+    }
+
     public void ResetScene()
     {
         ScoreManager.Instance.ResetScore();
         MapManager.Instance.ResetMap();
         foreach (var item in allConsumables)
+        {
+            if (item != null) item.ResetItem();
+        }
+        foreach (var item in allMovableItem)
         {
             if (item != null) item.ResetItem();
         }

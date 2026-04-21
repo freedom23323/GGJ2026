@@ -108,8 +108,14 @@ public class PlayerController : MonoBehaviour
         currentState.ExecuteSkill(this);
         PlayerExecuteSkillEvent?.Invoke(currentState.ToString());
     }
+
+    private void ClearState()
+    {
+        UIManager.Instance.HideDialogue();
+    }
     private void ToggleState()
     {
+        ClearState();
         if (currentState == angelState) TransitionTo(demonState);
         else TransitionTo(angelState);
     }

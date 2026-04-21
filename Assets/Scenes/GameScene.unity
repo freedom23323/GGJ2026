@@ -7114,7 +7114,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -7614,7 +7614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2265437444653865795, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2765785494773938617, guid: f3649fab141285e4cb10d7a423074a07, type: 3}
       propertyPath: m_LocalScale.x
@@ -12792,18 +12792,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCWoman
       objectReference: {fileID: 0}
-    - target: {fileID: 1183111938390248393, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1504620514346296294, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 1504620514346296294, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.59
-      objectReference: {fileID: 0}
     - target: {fileID: 6729006810927016693, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.5
@@ -12848,10 +12836,6 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 1744672106}
-    - target: {fileID: 8900543346601676115, guid: a8df25a6a55aa1a4aa8f2d5eafe7ca59, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13191,7 +13175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7118650879893722723, guid: eb2a1855cda968b429b8cb7c9530a37d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8158194843821505962, guid: eb2a1855cda968b429b8cb7c9530a37d, type: 3}
       propertyPath: m_LocalScale.x
